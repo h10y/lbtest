@@ -29,7 +29,7 @@ jobs:
         with:
           labels: |
             maintainer=Peter Solymos
-            org.opencontainers.image.title=Faithful
+            org.opencontainers.image.title=LB Test
             org.opencontainers.image.description=Load balancing test app
             org.opencontainers.image.vendor=Hosting Shiny Book Project
 
