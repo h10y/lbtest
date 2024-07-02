@@ -4,34 +4,53 @@ Original source: <https://github.com/rstudio/py-shiny/blob/7ba8f90a44ee25f41aa8c
 
 Examples explained: <https://github.com/analythium/shiny-load-balancing>
 
-## For R
+- [Load Balancing Shiny App](#load-balancing-shiny-app)
+  - [Python](#python)
+  - [R](#r)
+  - [Python Shinylive](#python-shinylive)
+  - [R Shinylive](#r-shinylive)
+  - [Serving Shinylive on GitHub Pages](#serving-shinylive-on-github-pages)
 
-1. Install libraries with `R -q -e "install.packages('deps');deps::install()"` in the r folder
-2. Run the app with `R -q -e "shiny::runApp(port=8080)"`
+## Python
 
-## For Python
+See the [`py-shiny`](./py-shiny/) folder.
 
-1. Install libraries with `pip install -r requirements.txt` in the python folder
-2. Run the app with `shiny run --reload --port 8080`
+## R
 
-## Shinylive
+See the [`r-shiny`](./r-shiny/) folder.
 
-Create Python shinylive version following <https://github.com/posit-dev/py-shinylive>:
+## Python Shinylive
+
+Create Python Shinylive version following <https://github.com/posit-dev/py-shinylive>:
 
 ```bash
-cd shiny-apps/hello-shiny
-# cd shiny-apps/load-balancing
-# cd shiny-apps/bananas
-shinylive export python py-shinylive
-python3 -m http.server --directory py-shinylive 8008
+# Export static files
+shinylive export py-shiny/app py-shinylive
+
+# Serve contents, visit http://localhost:8080
+python3 -m http.server --directory py-shinylive 8080
 ```
 
-Create R shinylive version following <https://posit-dev.github.io/r-shinylive/>:
+## R Shinylive
+
+Create R Shinylive version following <https://posit-dev.github.io/r-shinylive/>:
 
 ```bash
-cd shiny-apps/hello-shiny
-# cd shiny-apps/load-balancing
-# cd shiny-apps/bananas
-R -q -e 'shinylive::export("r", "r-shinylive")'
-R -q -e 'httpuv::runStaticServer("r-shinylive", port=8008)'
+# Export static files
+R -q -e "shinylive::export('r-shiny/app', 'r-shinylive')"
+
+# Serve contents, visit http://localhost:8080
+R -q -e "httpuv::runStaticServer('r-shinylive', port=8080)"
+```
+
+## Serving Shinylive on GitHub Pages
+
+Serving Shinylive apps on GitHub Pages (from `docs` folder on the `main` branch).
+
+```bash
+# Cleanup
+rm -rf docs/py-shinylive docs/r-shinylive
+
+# Copy files
+cp -r r-shinylive docs/ && cp -r py-shinylive docs/
 ```
