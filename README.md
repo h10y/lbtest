@@ -33,7 +33,7 @@ python3 -m http.server --directory py-shinylive 8080
 
 ## R Shinylive
 
-Create R Shinylive version following <https://posit-dev.github.io/r-shinylive/>:
+Create R Shinylive version following <https://github.com/posit-dev/r-shinylive/>:
 
 ```bash
 # Export static files
