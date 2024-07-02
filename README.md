@@ -57,3 +57,5 @@ cp -r r-shinylive docs/ && cp -r py-shinylive docs/
 # Render HTML from markdown
 pandoc -s -f markdown -t html5 -o "docs/index.html" "index.md"
 ```
+
+See deployed Shinylive results at <https://h10y.github.io/lbtest/>.
