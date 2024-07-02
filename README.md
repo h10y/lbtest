@@ -53,4 +53,7 @@ rm -rf docs/py-shinylive docs/r-shinylive
 
 # Copy files
 cp -r r-shinylive docs/ && cp -r py-shinylive docs/
+
+# Render HTML from markdown
+pandoc -s -f markdown -t html5 -o "docs/index.html" "index.md"
 ```

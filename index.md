@@ -1,4 +1,6 @@
-# Load Balancing Test for Shiny
+---
+title: Load Balancing Test for Shiny
+---
 
 - [Python Shinylive](./py-shinylive/)
 - [R Shinylive](./r-shinylive/)
