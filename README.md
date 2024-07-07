@@ -4,6 +4,8 @@ Original source: <https://github.com/rstudio/py-shiny/blob/7ba8f90a44ee25f41aa8c
 
 Examples explained: <https://github.com/analythium/shiny-load-balancing>
 
+![](example-lbtest.png)
+
 | Flavour           | Link  | Image  |
 |-------------------|---|---|
 | Python Shiny      | [`py-shiny`](./py-shiny/)  | [`ghcr.io/h10y/lbtest/py-shiny`](https://github.com/h10y/lbtest/pkgs/container/lbtest%2Fpy-shiny)  |
