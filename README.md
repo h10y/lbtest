@@ -4,20 +4,12 @@ Original source: <https://github.com/rstudio/py-shiny/blob/7ba8f90a44ee25f41aa8c
 
 Examples explained: <https://github.com/analythium/shiny-load-balancing>
 
-- [Load Balancing Shiny App](#load-balancing-shiny-app)
-  - [Python](#python)
-  - [R](#r)
-  - [Python Shinylive](#python-shinylive)
-  - [R Shinylive](#r-shinylive)
-  - [Serving Shinylive on GitHub Pages](#serving-shinylive-on-github-pages)
-
-## Python
-
-See the [`py-shiny`](./py-shiny/) folder.
-
-## R
-
-See the [`r-shiny`](./r-shiny/) folder.
+| Flavour           | Link  | Image  |
+|-------------------|---|---|
+| Python Shiny      | [`py-shiny`](./py-shiny/)  | [`ghcr.io/h10y/lbtest/py-shiny`](https://github.com/h10y/lbtest/pkgs/container/lbtest%2Fpy-shiny)  |
+| R Shiny           | [`r-shiny`](./r-shiny/)  | [`ghcr.io/h10y/lbtest/r-shiny`](https://github.com/h10y/lbtest/pkgs/container/lbtest%2Fr-shiny)  |
+| Python Shinylive  | [`py-shinylive`](./py-shinylive/)  | [`ghcr.io/h10y/lbtest/py-shinylive`](https://github.com/h10y/lbtest/pkgs/container/lbtest%2Fpy-shinylive)  |
+| R Shinylive       | [`r-shinylive`](./r-shinylive/)  | [`ghcr.io/h10y/lbtest/r-shinylive`](https://github.com/h10y/lbtest/pkgs/container/lbtest%2Fr-shinylive)  |
 
 ## Python Shinylive
 
